@@ -1,0 +1,82 @@
+/* Login.css */
+
+:root {
+  /* CSS Custom Properties for theme colors */
+  --background-color: #FEEEF8;          /* Light Pink */
+  --primary-color: #FF66B2;             /* Primary Pink */
+  --secondary-color: #FF3399;           /* Secondary/Darker Pink */
+  --text-color: #333;
+  --input-border: #ccc;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Include this font from Google Fonts */
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.signup {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup:hover {
+  color: var(--secondary-color);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+
+button.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px); /* Slight movement for a dynamic hover effect */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .center {
+    padding: 10px;
+  }
+}
